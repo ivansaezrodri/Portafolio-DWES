@@ -1,0 +1,242 @@
+:root {
+    --blanco: #FFFFFF;
+    --gris: #BABABA;
+    --azul: #4D64FF;
+    --negro: #000;
+    --fuentePrincipal: 'Roboto';
+    --fuenteSecundaria: 'Arial', normal;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Globales */
+
+body {
+    font-size: 20px;
+    background-color: var(--negro);
+    font-family: var(--fuentePrincipal)
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+
+/* Tipografia */
+
+h1 {
+    font-size: 7.8rem;
+    line-height: 8rem;
+    padding-top: 4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--blanco);
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--blanco);
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+}
+
+
+/* Utilidades */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+
+/* Navegacion */
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 10rem;
+}
+
+.navegacion a {
+    font-size: 1.8rem;
+}
+
+.navegacion__link {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+/* Presentacion */
+
+.presentacion {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.presentacion__texto h1,
+h2 {
+    text-align: right;
+}
+
+.presentacion__texto {
+    text-align: right;
+    flex-direction: column;
+}
+
+.presentacion__parrafo {
+    margin: 2rem 0 0 0;
+}
+
+.presentacion__imagen img {
+    max-height: 50rem;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+    background-size: contain;
+}
+
+
+/* Hobbies */
+
+.hobbies h1 {
+    padding-top: 4rem;
+}
+
+.hobbies__hobbie {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.hobbies__hobbie img {
+    height: 26rem;
+    width: 23rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies__seccion p {
+    text-align: center;
+}
+
+.hobbies__fila1,
+.hobbies__fila2 {
+    justify-content: center;
+}
+
+.hobbies__disenyo {
+    padding: 3rem 0rem;
+    text-align: center;
+    color: var(--gris);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Skills */
+
+.skills h1 {
+    padding-top: 4rem;
+}
+
+.skills__404notfound {
+    padding: 7rem 0rem;
+}
+
+.skills__404notfound--404 {
+    font-family: var(--fuenteSecundaria);
+    font-weight: 900;
+    font-size: 12rem;
+    height: 13rem;
+}
+
+.skills__404notfound--notfound {
+    font-family: var(--fuenteSecundaria);
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.skills__parrafo {
+    text-align: center;
+    color: var(--gris);
+}
+
+.skills__realidad p {
+    color: var(--gris);
+}
+
+.skills__realidad--lista {
+    color: var(--gris);
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.skills__realidad--notion {
+    font-weight: 900;
+    padding-bottom: 4rem;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 2rem 0 1rem 0;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__texto {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer__imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__imagen {
+    max-height: 5rem;
+}
